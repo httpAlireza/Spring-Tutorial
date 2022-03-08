@@ -23,7 +23,7 @@ public class SchoolService {
         schoolRepo.save(school);
     }
 
-    public void updateSchool(School school) {
+    public void updateSchool(School school, Long id) {
         try {
             schoolRepo.save(school);
         } catch (NullPointerException e) {
