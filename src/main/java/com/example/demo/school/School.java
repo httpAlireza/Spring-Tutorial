@@ -11,6 +11,7 @@ public class School {
     @Id
     @SequenceGenerator(name = "school_seq", sequenceName = "school_seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "school_seq")
+    @Column(name = "id", updatable = false, nullable = false)
     private Long id;
 
     @Column(name = "name", nullable = false)
